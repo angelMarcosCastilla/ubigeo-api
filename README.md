@@ -1,8 +1,7 @@
-```
-npm install
-npm run dev
-```
+# API UBIGEO PERU
 
-```
-npm run deploy
-```
+Los datos obtenidos para esta api son de este repositorio https://github.com/jmcastagnetto/ubigeo-peru-aumentado
+
+## Tecnologías
+- Hono
+- cloudflare workers
