@@ -1,14 +1,15 @@
 {
   "name": "ubigeo-api",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "build:frontend": "npm --prefix frontend install && npm --prefix frontend run build",
+    "dev": "wrangler dev",
+    "deploy": "npm run build:frontend && wrangler deploy --minify"
   },
   "dependencies": {
     "hono": "^4.5.11"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240529.0",
-    "wrangler": "^3.57.2"
+    "wrangler": "^4.90.0"
   }
 }
